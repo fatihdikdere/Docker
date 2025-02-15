@@ -1,0 +1,7 @@
+2013 March
+The Docker image => Universal app packaging
+The Docker registry => Universal app distribution
+The Docker container => Identical runtime environments
+
+docker run -d -p 8800:80 httpd
+docker ps
