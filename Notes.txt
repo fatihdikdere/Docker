@@ -23,4 +23,31 @@ docker container inspect CONTAINER
 
 docker container stats  
 
+docker container run -it
+docker container exec -it
+dcoker container start -ai CONTAINER	
+
+docker container port CONTAINER
+
 docker ps
+
+docker pull IMAGE
+
+docker network ls
+docker network inspect NETWORK
+docker network create --driver
+docker network connect
+docker network disconnect
+
+docker container run --network
+
+docker image ls
+docker image pull IMAGE:TAG
+docker image history IMAGE
+docker image inspect IMAGE
+docker image tag
+docker image push
+docker image build -t TAG .
+docker image build -t TAG -f DOCKERFILE
+docker image prune
+docker image prune -a
