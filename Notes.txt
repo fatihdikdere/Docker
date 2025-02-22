@@ -51,3 +51,10 @@ docker image build -t TAG .
 docker image build -t TAG -f DOCKERFILE
 docker image prune
 docker image prune -a
+
+docker volume ls
+docker volume inspect
+docker volume create 
+docker volume prune
+docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-db:/var/lib/mysql mysql
+docker container run -d --name nginx -p 80:80 -v $(pwd):/usr/share/nginx/html nginx
