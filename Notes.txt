@@ -58,3 +58,17 @@ docker volume create
 docker volume prune
 docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-db:/var/lib/mysql mysql
 docker container run -d --name nginx -p 80:80 -v $(pwd):/usr/share/nginx/html nginx
+
+kubectl run
+kubectl create
+kubectl apply
+
+kubectl version
+kubectl run my-nginx --image nginx
+kubectl create deployment my-nginx --image nginx
+kubectl get pods
+kubectl get all
+kubectl delete pod my-nginx
+kubectl delete deployment my-nginx
+kubectl scale deploy/my-nginx --replicas 2
+kubectl scale deploy my-nginx --replicas 2
