@@ -72,3 +72,23 @@ kubectl delete pod my-nginx
 kubectl delete deployment my-nginx
 kubectl scale deploy/my-nginx --replicas 2
 kubectl scale deploy my-nginx --replicas 2
+
+kubectl get deploy/my-apache
+kubectl get deploy/my-apache -o wide
+kubectl get deploy/my-apache -o yaml
+kubectl get all -o wide
+kubectl get nodes
+kubectl get nodes docker-desktop -o wide
+kubectl get pods -w
+kubectl get events
+kubectl get events --watch-only
+
+kubectl describe node docker-desktop
+kubectl describe deploy my-apache
+kubectl describe pod/POD_NAME
+
+kubectl logs deploy/my-apache
+kubectl logs deploy/my-apache --follow --tail 1
+kubectl logs pod/my-apache-55d9785566-d7h58 -c httpd
+kubectl logs pod/my-apache-55d9785566-d7h58 --all-containers=true
+kubectl logs -l app=my-apache
