@@ -92,3 +92,12 @@ kubectl logs deploy/my-apache --follow --tail 1
 kubectl logs pod/my-apache-55d9785566-d7h58 -c httpd
 kubectl logs pod/my-apache-55d9785566-d7h58 --all-containers=true
 kubectl logs -l app=my-apache
+
+kubectl expose deployment/httpenv --port 8888
+kubectl expose deployment/httpenv --port 8888 --name httpenv-np --type NodePort
+kubectl expose deployment/httpenv --port 8888 --name httpenv-lb --type LoadBalancer
+
+kubectl get namespaces
+
+kubectl create deployment test --image nginx --dry-run=client
+kubectl create deployment test --image nginx --dry-run=client -o yaml
