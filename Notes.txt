@@ -101,3 +101,10 @@ kubectl get namespaces
 
 kubectl create deployment test --image nginx --dry-run=client
 kubectl create deployment test --image nginx --dry-run=client -o yaml
+
+kubectl api-resources
+kubectl api-versions
+kubectl explain services --recursive
+kubectl explain services.spec
+kubectl explain services.spec.type
+kubectl explain deployment.spec.template.spec.volumes.nfs.server
